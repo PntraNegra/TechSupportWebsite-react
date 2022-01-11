@@ -43,14 +43,3 @@ h2 {
 .navbar-dark {
   background-color: #ecb80e;
 }
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-#carouselButton {
-  position: absolute;
-  right: 0;
-  bottom:0;
-  z-index: 100;
-}
