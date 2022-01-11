@@ -29,15 +29,15 @@ class Header extends Component{
                                 <img src="/Logo.gif" height="80" alt="Logo" />
                             </div>
                             <div className="col">
-                                <h1>Tech Support</h1>
-                                <h2 className="d-sm-block d-none">We Care a Lot Foundation</h2>
+                                <h1 className="d-md-block d-none">Tech Support</h1>
+                                <h2 className="d-md-block d-none">We Care a Lot Foundation</h2>
                             </div>
                         </div>
                     </div>
                 </Jumbotron>
                 <Navbar className="mb-4" dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto"></NavbarBrand>
+                        <NavbarBrand className="mr-auto d-sm-block d-md-none">Tech Support</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>

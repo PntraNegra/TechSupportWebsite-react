@@ -6,6 +6,7 @@ import PictureTutorials from './PictureTutorialsComponent';
 import VideoTutorials from './VideoTutorialsComponent';
 import Learn from './LearnComponent';
 import Documentation from './DocumentComponent';
+import Login from './LoginComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
 class Main extends Component {
@@ -31,6 +32,7 @@ class Main extends Component {
                     <Route exact path='/videoTutorial' render={() => <VideoTutorials />} />
                     <Route exact path='/learn' render={() => <Learn />} />
                     <Route exact path='/documentation' render={() => <Documentation />} />
+                    <Route exact path='/login' render={() => <Login />} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />
