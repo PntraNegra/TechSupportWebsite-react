@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WifiEn from './WifiEnComponent';
+import Update from './UpdateEnComponent';
 
 class PictureTutorials extends Component {
     constructor(props) {
@@ -22,7 +23,7 @@ class PictureTutorials extends Component {
                             <button className="btn btn-lg btn-block btn-info"><a href="#wifi" className="text-light">Connecting to Wifi</a></button>
                         </div>
                         <div className="col-md-6 mt-2 mb-2">
-                            <button className="btn btn-lg btn-block btn-info"><a>Update Computer</a></button>
+                            <button className="btn btn-lg btn-block btn-info"><a href="#update" className="text-light">Update Computer</a></button>
                         </div>
                     </div>
                     <div className="row row-content">
@@ -53,6 +54,9 @@ class PictureTutorials extends Component {
                     <hr />
                     <div id="wifi" className="row row-content m-2">
                         <WifiEn />
+                    </div>
+                    <div id="update" className="row row-content m-2">
+                        <Update />
                     </div>
                 </div>
                 
