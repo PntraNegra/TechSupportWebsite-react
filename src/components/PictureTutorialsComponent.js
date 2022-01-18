@@ -4,6 +4,9 @@ import Update from './UpdateEnComponent';
 import PowerDown from './PoweringDownComponent';
 import OpenApp from './OpeningApplicationsComponent';
 import RemoteDesktop from './RemoteDesktopComponent';
+import Email from './EmailComponent';
+import Social from './SocialComponent';
+import Zoom from './ZoomComponent';
 
 class PictureTutorials extends Component {
     constructor(props) {
@@ -42,15 +45,15 @@ class PictureTutorials extends Component {
                             <a href="#remoteDesktop" className="text-light"><button className="btn btn-lg btn-block btn-info">Remote Desktop</button></a>
                         </div>
                         <div className="col-md-6 mt-2 mb-2">
-                            <button className="btn btn-lg btn-block btn-info">Connecting to Zoom</button>
+                            <a href="#zoom" className="text-light"><button className="btn btn-lg btn-block btn-info">Connecting to Zoom</button></a>
                         </div>
                     </div>
                     <div className="row row-content">
                         <div className="col-md-6 mt-2 mb-2">
-                            <button className="btn btn-lg btn-block btn-info">Sending an Email</button>
+                            <a href="#email" className="text-light"><button className="btn btn-lg btn-block btn-info">Sending an Email</button></a>
                         </div>
                         <div className="col-md-6 mt-2 mb-2">
-                            <button className="btn btn-lg btn-block btn-info">Social Media</button>
+                            <a href="#socialMedia" className="text-light"><button className="btn btn-lg btn-block btn-info">Social Media</button></a>
                         </div>
                         
                     </div>
@@ -74,6 +77,19 @@ class PictureTutorials extends Component {
                     <div id="remoteDesktop" className="row row-content m-2">
                         <RemoteDesktop />
                     </div>
+                    <hr />
+                    <div id="email" className="row row-content m-2">
+                        <Email />
+                    </div>
+                    <hr />
+                    <div id="zoom" className="row row-content m-2">
+                        <Zoom />
+                    </div>
+                    <hr />
+                    <div id="socialMedia" className="row row-content m-2">
+                        <Social />
+                    </div>
+                    
                 </div>
                 
         );
