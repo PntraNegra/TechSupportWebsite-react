@@ -78,12 +78,12 @@ class PictureTutorials extends Component {
                         <RemoteDesktop />
                     </div>
                     <hr />
-                    <div id="email" className="row row-content m-2">
-                        <Email />
-                    </div>
-                    <hr />
                     <div id="zoom" className="row row-content m-2">
                         <Zoom />
+                    </div>
+                    <hr />
+                    <div id="email" className="row row-content m-2">
+                        <Email />
                     </div>
                     <hr />
                     <div id="socialMedia" className="row row-content m-2">
