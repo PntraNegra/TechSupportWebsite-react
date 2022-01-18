@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
     return (
         <footer className="site-footer">
+            <hr />
             <div className="container">
                 <div className="row">             
                     <div className="col-sm-6">

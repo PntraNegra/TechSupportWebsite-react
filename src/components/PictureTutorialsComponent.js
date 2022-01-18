@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WifiEn from './WifiEnComponent';
 import Update from './UpdateEnComponent';
 import PowerDown from './PoweringDownComponent';
+import OpenApp from './OpeningApplicationsComponent';
 
 class PictureTutorials extends Component {
     constructor(props) {
@@ -55,12 +56,21 @@ class PictureTutorials extends Component {
                     <hr />
                     <div id="wifi" className="row row-content m-2">
                         <WifiEn />
+                        
                     </div>
+                    <hr />
                     <div id="update" className="row row-content m-2">
                         <Update />
+                        
                     </div>
+                    <hr />
                     <div id="powerDown" className="row row-content m-2">
                         <PowerDown />
+                        
+                    </div>
+                    <hr />
+                    <div id="openApps" className="row row-content m-2">
+                        <OpenApp />
                     </div>
                 </div>
                 
