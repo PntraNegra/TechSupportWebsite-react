@@ -60,13 +60,13 @@ function Social(){
                 </div>
             </div>
             <div className="row row-content">
-                <div className="col">
+                <div className="col-12">
                     <h5 className="mb-3">
                         After Typing the code a box will appear indicating your account is active.
                     </h5>
                 </div>
                 <div className="col">
-                    <img src="/imgEnglish/accountconfirmed.png" alt="signed in" />
+                    <img className="img-fluid mb-3" src="/imgEnglish/accountconfirmed.png" alt="signed in" />
                 </div>
             </div>
             <div className="row row-content">
