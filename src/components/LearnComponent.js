@@ -5,12 +5,7 @@ import MusicCarousel from './MusicCarouselComponent';
 
 
 class Learn extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-
-        };
-    }
+    
     
     render() {
         return (
@@ -26,7 +21,7 @@ class Learn extends Component {
                         <h4>IT Security</h4>
                     </div>
                     <div className="col-6 col-md-2">
-                        <button className="btn btn-large btn-success">Continue</button>
+                        <a href="/itSecurity"><button className="btn btn-large btn-success">Continue</button></a>
                     </div>
                 </div>
                 <div className="row row-content">
@@ -39,7 +34,7 @@ class Learn extends Component {
                         <h4>Computer Science</h4>
                     </div>
                     <div className="col-6 col-md-2">
-                        <button className="btn btn-large btn-success">Continue</button>
+                        <a href="/computerScience"><button className="btn btn-large btn-success">Continue</button></a>
                     </div>
                     <div className="offset-md-2 col-lg-8 col-md-10">
                         <CSCarousel />
@@ -47,10 +42,10 @@ class Learn extends Component {
                 </div>
                 <div className="row row-content">
                     <div className="col-6 col-md-2">
-                        <h4>Music Theory & Production</h4>
+                        <h4>Music Theory &amp; Production</h4>
                     </div>
                     <div className="col-6 col-md-2">
-                        <button className="btn btn-large btn-success">Continue</button>
+                        <a href="/music"><button className="btn btn-large btn-success">Continue</button></a>
                     </div>
                     <div className="offset-md-2 col-lg-8 col-md-10">
                         <MusicCarousel />
