@@ -11,7 +11,6 @@ class Home extends Component {
             lastName: '',
             phoneNum: '',
             email: '',
-            agree: false,
             contactType: 'By Phone',
             feedback: '',
             touched: {
@@ -29,7 +28,7 @@ class Home extends Component {
     handleInputChange(event) {
         const target = event.target;
         const name = target.name;
-        const value = target.type === 'checkbox' ? target.checked : target.value;
+        const value = target.value;
     
         this.setState({
             [name]: value
@@ -38,9 +37,7 @@ class Home extends Component {
 
     handleSubmit(event) {
         console.log('Current state is: ' + JSON.stringify(this.state));
-        alert('After you close this window an email window will be opened up. Please ignore the contents and send the email as is. The Technician knows how to make sense of this request as is. Please make no adjustments.');
-        event.preventDefault();
-        window.open(`mailto:bcervantes@wecarealot.org?subject=request&body=${JSON.stringify(this.state)}`);
+        alert('Current state is: ' + JSON.stringify(this.state));
     }
 
     validate(firstName, lastName, phoneNum, email) {
