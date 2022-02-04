@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useRef } from 'react';
 import { Button, Form, FormGroup, Label, Input, Col, FormFeedback } from 'reactstrap';
+import emailjs from '@emailjs/browser';
+import { ContactUs } from './ContactComponent';
+
 
 class Home extends Component {
 
@@ -36,8 +39,16 @@ class Home extends Component {
     }
 
     handleSubmit(event) {
+
+        event.preventDefault();
         console.log('Current state is: ' + JSON.stringify(this.state));
         alert('Current state is: ' + JSON.stringify(this.state));
+        emailjs.sendForm('service_3bui4vr', 'template_wfbfb8i', this.state, 'user_dIYdFSnWmDDmkknLxPBJi')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
     }
 
     validate(firstName, lastName, phoneNum, email) {
@@ -109,7 +120,7 @@ class Home extends Component {
                         <hr />
                     </div>
                 </div>
-                <div className="row row-content">
+                {/*<div className="row row-content">
                     <div className="col-md-10">
                         <Form onSubmit={this.handleSubmit}>
                             <FormGroup row>
@@ -194,6 +205,11 @@ class Home extends Component {
                                 </Col>
                             </FormGroup>
                         </Form>
+                    </div>
+        </div>*/}
+                <div className="row">
+                    <div className="col">
+                        <ContactUs />
                     </div>
                 </div>
             </div>
