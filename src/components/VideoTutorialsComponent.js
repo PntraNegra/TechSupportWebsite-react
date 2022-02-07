@@ -1,4 +1,5 @@
 import React from 'react';
+import YoutubeEmbed from './YoutubeEmbed';
 
 function VideoTutorials(props) {
     return (
@@ -9,36 +10,93 @@ function VideoTutorials(props) {
                 </div>
             </div>
             
-            <div className="row row-content m-2">
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Connecting to Wifi</a></button>
+            <div className="row row-content">
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#wifi" className="text-light"><button className="btn btn-lg btn-block btn-info">Connecting to Wifi</button></a>
                 </div>
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Update Computer</a></button>
-                </div>
-            </div>
-            <div className="row row-content m-2">
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Powering Down</a></button>
-                </div>
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Opening Applications</a></button>
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#update" className="text-light"><button className="btn btn-lg btn-block btn-info">Update Computer</button></a>
                 </div>
             </div>
-            <div className="row row-content m-2">
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Remote Desktop</a></button>
+            <div className="row row-content">
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#powerDown" className="text-light"><button className="btn btn-lg btn-block btn-info">Powering Down</button></a>
                 </div>
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Connecting to Zoom</a></button>
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#openApps" className="text-light"><button className="btn btn-lg btn-block btn-info">Opening Applications</button></a>
                 </div>
             </div>
-            <div className="row row-content m-2">
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Sending an Email</a></button>
+            <div className="row row-content">
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#remoteDesktop" className="text-light"><button className="btn btn-lg btn-block btn-info">Remote Desktop</button></a>
                 </div>
-                <div className="col-md-6">
-                    <button className="btn btn-lg btn-block btn-info"><a>Social Media</a></button>
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#zoom" className="text-light"><button className="btn btn-lg btn-block btn-info">Connecting to Zoom</button></a>
+                </div>
+            </div>
+            <div className="row row-content">
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#email" className="text-light"><button className="btn btn-lg btn-block btn-info">Sending an Email</button></a>
+                </div>
+                <div className="col-md-6 mt-2 mb-2">
+                    <a href="#socialMedia" className="text-light"><button className="btn btn-lg btn-block btn-info">Social Media</button></a>
+                </div>
+                        
+            </div>
+            <hr />
+            <div id="wifi" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Connecting to wifi</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="update" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Updating Your Computer</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="powerDown" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Powering Down Your Computer</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="openApps" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Opening Applications</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="remoteDesktop" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Using Remote Desktop</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="zoom" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Joining a Zoom Meeting</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="email" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Sending an Email</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
+                </div>
+            </div>
+            <hr />
+            <div id="socialMedia" className="row m-2">
+                <div className="col">
+                    <h3 className="text-center mt-3 mb-3">Social Media</h3>
+                    <YoutubeEmbed embedId="TeNbP0v1wiM" />
                 </div>
             </div>
         </div>
