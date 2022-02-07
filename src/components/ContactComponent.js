@@ -5,9 +5,6 @@ import { user_id, template_id, service_id } from '../.emailKey';
 
 export const ContactUs = () => {
   const form = useRef();
-  const [showModal, setModal] = useState(false);
-  const toggleModal = () => setModal(true);
-  const closeModal = () => setModal(false);
 
   const sendEmail = (e) => {
     //e.preventDefault(); //commenting this line will cause the page to refresh, uncommenting this line will prevent the screen from refreshing
@@ -22,7 +19,7 @@ export const ContactUs = () => {
   };
 
   return (
-      <React.Fragment>
+
     <form ref={form} onSubmit={sendEmail}>
         <div className="row form-group">
             <div className="col-md-2">
@@ -76,16 +73,7 @@ export const ContactUs = () => {
                 <textarea className="form-control" name="feedback" rows="8" placeholder="Click here to begin typing..." />
             </div>
         </div>
-        <input className="btn btn-md bg-primary text-light" type="submit" value="Submit Request" onClick={toggleModal} />
+        <input className="btn btn-md bg-primary text-light" type="submit" value="Submit Request" />
     </form>
-    <Modal show={showModal}>
-        <ModalHeader>Request Sent</ModalHeader>
-                
-        <ModalBody>
-            Thank you.
-            <input className="btn text-light bg-danger" value="Close" onClick={closeModal} />
-        </ModalBody>
-    </Modal>
-    </React.Fragment>
   );
 };
