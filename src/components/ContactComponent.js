@@ -6,7 +6,7 @@ export const ContactUs = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-        //e.preventDefault(); //commenting this line will cause the page to refresh, uncommenting this line will prevent the screen from refreshing
+        e.preventDefault(); //commenting this line will cause the page to refresh, uncommenting this line will prevent the screen from refreshing
         emailjs.sendForm(service_id, template_id, form.current, user_id) //if you wish to make this code work this uses email JS. email JS will allow to to receive forms without having a backend set up.
         .then((result) => {
             console.log(result.text);
